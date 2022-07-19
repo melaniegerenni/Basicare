@@ -8,84 +8,114 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
+    
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/favicon2.png">
+
     <title>Basicare - Home</title>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html" class="logo">
-            <img src="img/logo-basicare.png" alt="logo Basicare" class="animate__animated animate__fadeInDown">
-        </a>
-        <nav class="animate__animated animate__fadeIn">
-            <ul>
-                <li class="menuItem">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="menuItem">
-                    <a href="pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="menuItem">
-                    <a href="pages/productos.html">Productos</a>
-                </li>
-                <li class="menuItem">
-                    <a href="pages/lineas-especiales.html">Líneas especiales</a> 
-                </li>
-                <li class="menuItem">
-                    <a href="pages/contacto.html">Contacto</a>
-                </li>
-             </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-md bg-light shadow sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand p-2" href="#"><img src="img/logo-basicare.png" alt="" width="60%" class="animate__animated animate__fadeInDown"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-1 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/lineas-especiales.html">Marcas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 
     <main class="main">
-        <div class="portada">
-            <img src="img/portada-basicare.jpg" alt="portada Basicare">
+        <div id="carouselExampleControls" class="carousel slide mx-lg-3 mb-2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="img/carousel1.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/carousel2.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/carousel3.jpg" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
+        <h2 class="text-center mt-5 mb-4 animate__animated animate__fadeInDown">Conocé todos nuestros productos</h2>
         
         <div class="secciones">
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/pinzas-depilar.jpg" alt="pinzas">
-                <h4>Pinzas de depilar</h4>
+                <h3>Pinzas de depilar</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
-                <a href="">Ver</a>
+                <a href="pages/productos.html#pinzas">Ver</a>
             </div>
 
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/alicates.jpg" alt="alicates">
-                <h4>Alicates</h4>
+                <h3>Alicates</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
-                <a href="">Ver</a>
+                <a href="pages/productos.html#alicates">Ver</a>
             </div>
 
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/tijeritas.jpg" alt="tijeritas">
-                <h4>Tijeras</h4>
+                <h3>Tijeras</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
-                <a href="">Ver</a>
+                <a href="pages/productos.html#tijeras">Ver</a>
             </div>
 
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/arqueadores.jpg" alt="arqueadores">
-                <h4>Arqueadores de pestañas</h4>
+                <h3>Arqueadores de pestañas</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
                 <a href="">Ver</a>
             </div>
 
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/brochas.jpg" alt="brochas">
-                <h4>Brochas</h4>
+                <h3>Brochas</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
                 <a href="">Ver</a>
             </div>
 
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/cepillos.jpg" alt="cepillos">
-                <h4>Cepillos</h4>
+                <h3>Cepillos</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
                 <a href="">Ver</a>
             </div>
@@ -101,7 +131,10 @@
                 <img src="img/instagram.png" alt="logo Instagram">
             </a>
         </div>
-        <h6>@2022 BASICARE | Todos los derechos reservados</h6>
+        <small>@2022 BASICARE | Todos los derechos reservados</small>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
