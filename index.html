@@ -21,6 +21,9 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/favicon2.png">
 
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/356c7098f2.js" crossorigin="anonymous"></script>
+
     <title>Basicare - Home</title>
 </head>
 <body>
@@ -33,19 +36,19 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mb-1 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="text-uppercase nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                <a class="text-uppercase nav-link" href="pages/nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/productos.html">Productos</a>
+                <a class="text-uppercase nav-link" href="pages/productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/lineas-especiales.html">Marcas</a>
+                <a class="text-uppercase nav-link" href="pages/lineas-especiales.html">Marcas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                <a class="text-uppercase nav-link" href="pages/contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -75,63 +78,67 @@
             </button>
         </div>
 
-        <h2 class="text-center mt-5 mb-4 animate__animated animate__fadeInDown">Conocé todos nuestros productos</h2>
+        <h2 class="text-center mt-4 mb-4 animate__animated animate__fadeInDown">Conocé todos nuestros productos</h2>
         
         <div class="secciones">
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/pinzas-depilar.jpg" alt="pinzas">
                 <h3>Pinzas de depilar</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
-                <a href="pages/productos.html#pinzas">Ver</a>
+                <a class="botonSecciones btn btn-dark w-50" href="pages/productos.html#pinzas" role="button">Ver</a>
             </div>
 
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/alicates.jpg" alt="alicates">
                 <h3>Alicates</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
-                <a href="pages/productos.html#alicates">Ver</a>
+                <a class="botonSecciones btn btn-dark w-50" href="pages/productos.html#alicates" role="button">Ver</a>
             </div>
 
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/tijeritas.jpg" alt="tijeritas">
                 <h3>Tijeras</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
-                <a href="pages/productos.html#tijeras">Ver</a>
+                 <a class="botonSecciones btn btn-dark w-50" href="pages/productos.html#tijeras" role="button">Ver</a>
             </div>
 
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/arqueadores.jpg" alt="arqueadores">
                 <h3>Arqueadores de pestañas</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
-                <a href="">Ver</a>
+                <a class="botonSecciones btn btn-dark w-50" href="#" role="button">Ver</a>
             </div>
 
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/brochas.jpg" alt="brochas">
                 <h3>Brochas</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
-                <a href="">Ver</a>
+                <a class="botonSecciones btn btn-dark w-50" href="#" role="button">Ver</a>
             </div>
 
             <div class="seccionesMain animate__animated animate__fadeIn">
                 <img src="img/cepillos.jpg" alt="cepillos">
                 <h3>Cepillos</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni iste nisi et dicta sit magnam, qui.</p>
-                <a href="">Ver</a>
+                <a class="botonSecciones btn btn-dark w-50" href="#" role="button">Ver</a>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="redes">
-            <a href="https://www.facebook.com/basicareargentina/" target="_blank">
-                <img src="img/facebook.png" alt="logo Facebook">
+    <footer class="bg-dark container-fluid p-2">
+        <div class="row align-items-center">
+          <div class="col-2 d-flex">
+            <a href="https://www.facebook.com/basicareargentina/" target="_blank" class="text-decoration-none" aria-label="Facebook">
+              <i class="fa-brands fa-facebook fa-xl m-1"></i>
             </a>
-            <a href="https://www.instagram.com/basicareargentina/?hl=es" target="_blank">
-                <img src="img/instagram.png" alt="logo Instagram">
+            <a href="https://www.instagram.com/basicareargentina/?hl=es" target="_blank" class="text-decoration-none" aria-label="Instagram">
+                <i class="fa-brands fa-instagram fa-xl m-1"></i>
             </a>
+          </div>
+          <div class="col-10 text-end">
+            <small>@2022 BASICARE &copy; Todos los derechos reservados</small>
+          </div>
         </div>
-        <small>@2022 BASICARE | Todos los derechos reservados</small>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->

@@ -20,6 +20,10 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../img/favicon2.png">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/356c7098f2.js" crossorigin="anonymous"></script>
+
     <title>Basicare - Contacto</title>
 </head>
 <body>
@@ -32,19 +36,19 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mb-1 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="text-uppercase nav-link" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a class="text-uppercase nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="productos.html">Productos</a>
+                <a class="text-uppercase nav-link" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="lineas-especiales.html">Marcas</a>
+                <a class="text-uppercase nav-link" href="lineas-especiales.html">Marcas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                <a class="text-uppercase nav-link active" aria-current="page" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -55,57 +59,59 @@
         <h2 class="animate__animated animate__fadeInDown">Contactanos</h2>
         <div class="mainContacto-1">
             <div class="mainContactoInfo tel animate__animated animate__fadeInLeft">
-                <img src="../img/iconPhone.png" alt="icono telefono">
+                <i class="fa-solid fa-phone"></i>
                 <p>+54 11 4566-6646</p>
             </div>
             <div class="mainContactoInfo mail animate__animated animate__fadeInLeft">
-                <img src="../img/iconMail.png" alt="icono mail">
+                <i class="fa-solid fa-envelope"></i>
                 <p>info@basicare.com.ar</p>
             </div>
             <div class="mainContactoInfo dire animate__animated animate__fadeInLeft">
-                <img src="../img/iconPin.png" alt="icono pin mapa">
+                <i class="fa-solid fa-location-dot"></i>
                 <p>Villa del Parque, CABA</p>
             </div>
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.722897124448!2d-58.498820630349314!3d-34.60591323580582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9df44319d89%3A0x72e02046997c8cef!2sVilla%20del%20Parque%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1656600090250!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>            
 
-            <form action="" method="" class="form animate__animated animate__fadeIn">
+            <form action="" method="" class="form animate__animated animate__fadeIn p-3">
                 <fieldset>
                     <legend>Formulario de contacto</legend>
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Completa tu nombre">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Apellido">
                     </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Completa tu email">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
                     </div>
-                    <div>
-                        <label for="telefono">Teléfono</label>
-                        <input type="number" name="telefono" placeholder="Completa tu teléfono">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput3" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="011 1111 1111">
                     </div>
-                    <div>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="" cols="" rows="10" placeholder="Escriba aquí"></textarea>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Dejenos un mensaje"></textarea>
                     </div>
-                    <div>
-                        <input type="submit" id="enviar">
-                    </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
                 </fieldset>
             </form>
         </div>      
     </main>
 
-    <footer class="footer">
-        <div class="redes">
-            <a href="https://www.facebook.com/basicareargentina/" target="_blank">
-                <img src="../img/facebook.png" alt="logo Facebook">
+    <footer class="bg-dark container-fluid p-2">
+        <div class="row align-items-center">
+          <div class="col-2 d-flex">
+            <a href="https://www.facebook.com/basicareargentina/" target="_blank" class="text-decoration-none" aria-label="Facebook">
+              <i class="fa-brands fa-facebook fa-xl m-1"></i>
             </a>
-            <a href="https://www.instagram.com/basicareargentina/?hl=es" target="_blank">
-                <img src="../img/instagram.png" alt="logo Instagram">
+            <a href="https://www.instagram.com/basicareargentina/?hl=es" target="_blank" class="text-decoration-none" aria-label="Instagram">
+                <i class="fa-brands fa-instagram fa-xl m-1"></i>
             </a>
+          </div>
+          <div class="col-10 text-end">
+            <small>@2022 BASICARE &copy; Todos los derechos reservados</small>
+          </div>
         </div>
-        <small>@2022 BASICARE | Todos los derechos reservados</small>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->

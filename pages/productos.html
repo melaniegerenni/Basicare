@@ -20,6 +20,10 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../img/favicon2.png">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/356c7098f2.js" crossorigin="anonymous"></script>
+
     <title>Basicare - Productos</title>
 </head>
 <body>
@@ -32,19 +36,19 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mb-1 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="text-uppercase nav-link" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a class="text-uppercase nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                <a class="text-uppercase nav-link active" aria-current="page" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="lineas-especiales.html">Marcas</a>
+                <a class="text-uppercase nav-link" href="lineas-especiales.html">Marcas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="text-uppercase nav-link" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -53,7 +57,7 @@
 
     <main class="p-3">
         <div class="container-fluid" id="pinzas">
-            <div class="row pt-5 mb-2">
+            <div class="row pt-5 mb-5">
                 <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-12">Pinzas de depilar</h2>
             </div>
             <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 animate__animated animate__fadeIn">
@@ -69,8 +73,8 @@
             </div>
         </div>
         <div class="container-fluid" id="alicates">
-            <div class="row pt-5 mb-2">
-                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-12">Alicates</h2>
+            <div class="row pt-5 mb-5 justify-content-center">
+                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-11 border-top">Alicates</h2>
             </div>
             <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 animate__animated animate__fadeIn">
                 <div class="col p-2">
@@ -88,8 +92,8 @@
             </div>
         </div>
         <div class="container-fluid" id="tijeras">
-            <div class="row pt-5 mb-2">
-                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-12">Tijeras</h2>
+            <div class="row pt-5 mb-5 justify-content-center">
+                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-11 border-top">Tijeras</h2>
             </div>
             <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 animate__animated animate__fadeIn">
                 <div class="col p-2">
@@ -104,8 +108,8 @@
             </div>
         </div>
         <div class="container-fluid" id="esponjasFaciales">
-            <div class="row pt-5 mb-2">
-                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-12">Esponjas faciales</h2>
+            <div class="row pt-5 mb-5 justify-content-center">
+                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-11 border-top">Esponjas faciales</h2>
             </div>
             <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 animate__animated animate__fadeIn">
                 <div class="col p-2">
@@ -127,16 +131,20 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="redes">
-            <a href="https://www.facebook.com/basicareargentina/" target="_blank">
-                <img src="../img/facebook.png" alt="logo Facebook">
+    <footer class="bg-dark container-fluid p-2">
+        <div class="row align-items-center">
+          <div class="col-2 d-flex">
+            <a href="https://www.facebook.com/basicareargentina/" target="_blank" class="text-decoration-none" aria-label="Facebook">
+              <i class="fa-brands fa-facebook fa-xl m-1"></i>
             </a>
-            <a href="https://www.instagram.com/basicareargentina/?hl=es" target="_blank">
-                <img src="../img/instagram.png" alt="logo Instagram">
+            <a href="https://www.instagram.com/basicareargentina/?hl=es" target="_blank" class="text-decoration-none" aria-label="Instagram">
+                <i class="fa-brands fa-instagram fa-xl m-1"></i>
             </a>
+          </div>
+          <div class="col-10 text-end">
+            <small>@2022 BASICARE &copy; Todos los derechos reservados</small>
+          </div>
         </div>
-        <small>@2022 BASICARE | Todos los derechos reservados</small>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->

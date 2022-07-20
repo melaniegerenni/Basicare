@@ -7,14 +7,7 @@
 /* header */
 
 .nav-link{
-    text-transform: uppercase;
     font-size: 0.9rem;
-}
-
-@media screen and (min-width: 1024px){
-    .nav-link:hover{
-        color: #a5d3c8;
-    }
 }
 
 /* main */
@@ -61,17 +54,12 @@
     grid-area: info;
 }
 
-.seccionesMain a{
-    text-decoration: none;
-    color: black;
-    background-color: #a5d3c8;
-    border-radius: 30px;
-    width: 5rem;
-    grid-area: boton;
-    margin-bottom: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.botonSecciones{
+    border-radius: 15px;
+}
+
+.botonSecciones:active{
+    transform: translate(3px, 3px);
 }
 
 @media screen and (min-width: 768px){
@@ -86,7 +74,7 @@
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 992px){
     .secciones{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -103,6 +91,8 @@
         position: absolute;
         top: -30px;
     }
+
+    
 }
 
 /* main NOSOTROS */
@@ -118,7 +108,57 @@
 
 .mainNosotros p{
     margin: 20px 10px;
+    font-size: 1rem;
     text-align: center;
+}
+
+.imgNosotros{
+    display: none;
+}
+
+@media screen and (min-width: 992px){
+    .mainNosotrosContent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "img text1"
+                             "img text2"
+                             "img text3"
+                             "img text4";
+        align-items: center;
+    }
+
+    .imgNosotros{
+        height: 700px;
+        grid-area: img;
+        display: flex;
+        justify-content: flex-end;
+        overflow: hidden;
+        margin: 2rem;
+        border-radius: 50px;
+    }
+
+    .mainNosotrosContent p{
+        text-align: left;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .mainNosotrosContent .text1{
+        grid-area: text1;
+    }
+
+    .mainNosotrosContent .text2{
+        grid-area: text2;
+    }
+
+    .mainNosotrosContent .text3{
+        grid-area: text3;
+    }
+
+    .mainNosotrosContent .text4{
+        grid-area: text4;
+    }
 }
 
 /* main PRODUCTOS */
@@ -127,7 +167,7 @@
     transition: 0.2s;
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:992px){
     .product:hover{
         transform: scale(1.05);
     }
@@ -172,11 +212,7 @@
     justify-content: center;
 }
 
-.mainLineasContent p{
-    display: none;
-}
-
-@media screen and (min-width:700px){
+@media screen and (min-width:768px){
     .mainSignature, .mainRose, .mainGreen, .mainMen{
         height: 400px;
         justify-content: flex-start;
@@ -185,14 +221,9 @@
     .mainLineasContent img{
         width: 65%;
     }
-
-    .mainLineasContent p{
-        display: block;
-    }
-
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:992px){
     .mainLineas{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -200,24 +231,28 @@
 
     .mainSignature{
         background-image: linear-gradient(to bottom, white, rgba(0,0,0,0)), url("../img/signature.jpg");
-        height: 80vh;
+        height: 85vh;
         background-position: center;
+        justify-content: center;
     }
 
     .mainRose{
         background-image: linear-gradient(to bottom, white, rgba(0,0,0,0)), url("../img/rose.jpg");
-        height: 80vh;
+        height: 85vh;
+        justify-content: center;
     }
 
     .mainGreen{
         background-image: linear-gradient(to bottom, white, rgba(0,0,0,0)), url("../img/green.jpg");
-        height: 80vh;
+        height: 85vh;
         background-position: right;
+        justify-content: center;
     }
 
     .mainMen{
         background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.8), rgba(255,255,255,0)), url("../img/men.jpg");
-        height: 80vh;
+        height: 85vh;
+        justify-content: center;
     }
 
     .mainLineasContent{
@@ -231,11 +266,13 @@
         width: 80%;
     }
 
-    .mainLineasContent p{
-        color: rgb(61, 61, 61);
-        background-color: rgba(244, 244, 244, 0.8);
-        padding: 1rem;
+    .textoLineas{
+        background-color: rgba(255,255,255,0.8);
         border-radius: 20px;
+    }
+
+    .botonLineas{
+        border-radius: 10px;
     }
 }
 
@@ -259,11 +296,6 @@
     margin: 20px;
 }
 
-.mainContactoInfo img{
-    display: inline-block;
-    width: 20px;
-}
-
 .mainContactoInfo p{
     display: inline-block;
     font-size: large;
@@ -281,52 +313,10 @@ iframe{
 
 .form legend{
     text-align: center;
-    font-weight: bold;
 }
 
-.form div{
-    margin: 20px;
-    display: flex;
-    justify-content: flex-end;
-}
 
-.form div label{
-    margin-right: 0px;
-}
-
-.form div input{
-    margin: 0px 10px;
-    padding: 0.25rem;
-    width: 100%;
-    border: none;
-    box-shadow: 1px 1px 5px gray;
-    border-radius: 5px;
-}
-
-textarea{
-    margin: 0px 10px;
-    padding: 0.2rem;
-    width: 100%;
-    border: none;
-    box-shadow: 1px 1px 5px gray;
-    border-radius: 5px;
-}
-
-#enviar{
-    background-color: #a5d3c8;
-    border: none;
-    border-radius: 10px;
-    height: auto;
-    width: auto;
-    padding: 1%;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    box-shadow: 1px 1px 5px gray;
-    transition: 0.2s;
-}
-
-@media screen and (min-width:1024px){
+@media screen and (min-width:992px){
     .mainContacto-1{
         display: grid;
         grid-template-areas: "tel form"
@@ -369,27 +359,10 @@ textarea{
 
 /* footer */
 
-.footer{
-    background-color: #a5d3c8;
-    padding: 0.5rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+footer i{
+    color: rgb(135, 135, 135);
 }
 
-.redes img{
-    width: 30%;
-    transition: 0.2s;
-}
-
-.redes a{
-    text-decoration: none;
-}
-
-.footer small{
-    color: white;
-}
-
-.footer img:hover{
-    transform: scale(1.1);
+footer small{
+    color: rgb(135, 135, 135);
 }
