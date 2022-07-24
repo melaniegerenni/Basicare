@@ -1,0 +1,28 @@
+/* reset */
+*{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+//variables
+$color-buttons: rgb(45, 45, 45);
+$color-font-footer: rgb(181, 180, 180);
+
+
+/* header */
+.nav-link{
+    font-size: 0.9rem;
+}
+
+/* footer */
+footer{
+    i{
+        color: $color-font-footer;
+    }
+    small{
+        color: $color-font-footer;
+    }
+}
+
+/* main INDEX */
+@import "utilities/index";
