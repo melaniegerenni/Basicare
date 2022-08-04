@@ -1,0 +1,14 @@
+footer{
+    i{
+        color: $color-font-footer;
+        transition: 0.2s;
+    }
+
+    i:hover{
+        @include animacion-productos(scale(1.1));
+    }
+
+    small{
+        color: $color-font-footer;
+    }
+}

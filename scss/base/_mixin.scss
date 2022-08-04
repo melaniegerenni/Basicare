@@ -1,0 +1,21 @@
+//para las animaciones en _productos y en _footer
+
+@mixin animacion-productos($transform){
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -moz-transform: $transform;
+    transform: $transform;
+}
+
+
+//usado para los fondos en _marcas
+
+@mixin fondo-marcas($imagen){
+    background-image: linear-gradient(to right, white, white, rgba(0,0,0,0), rgba(0,0,0,0)), url("../img/#{$imagen}.jpg");
+}
+
+@mixin fondo-marcas-lg($imagen){
+    background-image: linear-gradient(to bottom, white, rgba(0,0,0,0)), url("../img/#{$imagen}.jpg");
+    height: 85vh;
+    justify-content: center;
+}

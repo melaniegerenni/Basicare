@@ -4,25 +4,36 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-//variables
-$color-buttons: rgb(45, 45, 45);
-$color-font-footer: rgb(181, 180, 180);
+//base
+@import "base/variables";
+@import "base/mixin";
+@import "base/extend";
+@import "base/maps";
 
 
 /* header */
-.nav-link{
-    font-size: 0.9rem;
-}
+@import "components/header";
 
-/* footer */
-footer{
-    i{
-        color: $color-font-footer;
-    }
-    small{
-        color: $color-font-footer;
-    }
+/* para todos los html */
+h1{
+    font-size: map-get($map: $headings, $key: h1);
 }
 
 /* main INDEX */
-@import "utilities/index";
+@import "components/index";
+
+/* main NOSOTROS */
+@import "components/nosotros";
+
+/* main PRODUCTOS */
+@import "components/productos";
+
+/* main MARCAS */
+@import "components/marcas";
+
+/* main CONTACTO */
+@import "components/contacto";
+
+/* footer */
+@import "components/footer";
+

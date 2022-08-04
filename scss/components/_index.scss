@@ -1,4 +1,6 @@
 //main INDEX
+
+
 .secciones{
     display: flex;
     flex-direction: column;
@@ -21,7 +23,7 @@
             grid-area: img;
         }
 
-        h3{
+        h2{
             font-size: 1.2rem;
             grid-area: titulo;
             margin-top: 0.5rem;
@@ -33,9 +35,11 @@
         }
 
         .botonSecciones{
-            border-radius: 15px;
-            background-color: $color-buttons;
-            border-color: $color-buttons;
+            @extend %botones;
+        }
+
+        .botonSecciones:hover{
+            @extend %botones-hover;
         }
     }
 }

@@ -1,0 +1,20 @@
+//layout armado todo con Bootstrap
+.mainProductos{
+    h2{
+        font-size: map-get($map: $headings, $key: h2);
+    }
+
+    .h2Pinzas{
+        border-top: 0.8px solid rgb(71, 71, 71);
+    }
+
+    .product{
+        transition: 0.2s;
+    }
+}
+
+@media screen and (min-width:992px){
+    .product:hover{
+        @include animacion-productos(scale(1.05));
+    }
+}
