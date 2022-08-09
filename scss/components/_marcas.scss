@@ -40,11 +40,13 @@
     }
     
     .botonLineas{
-        border-radius: 10px;
+        @extend %botones;
+    }
+
+    .botonLineas:hover{
+        @extend %botones-hover;
     }
 }
-
-
 
 @media screen and (min-width:768px){
     .mainSignature, .mainRose, .mainGreen, .mainMen{
@@ -52,8 +54,14 @@
         justify-content: flex-start;
     }
 
-    .mainLineasContent img{
-        width: 65%;
+    .mainLineasContent{
+        img{
+            width: 65%;
+        }
+
+        .botonLineas{
+            width: 25%;
+        }
     }
 }
 
@@ -88,6 +96,10 @@
 
         img{
             width: 80%;
+        }
+
+        .botonLineas{
+            width: 100%;
         }
     }
 }

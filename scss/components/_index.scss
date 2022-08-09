@@ -24,7 +24,7 @@
         }
 
         h2{
-            font-size: 1.2rem;
+            font-size: 1rem;
             grid-area: titulo;
             margin-top: 0.5rem;
         }
@@ -48,6 +48,10 @@
     .secciones{
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        p{
+            font-size: 1rem;
+        }
     }
 }
 

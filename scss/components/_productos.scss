@@ -5,16 +5,18 @@
     }
 
     .h2Pinzas{
-        border-top: 0.8px solid rgb(71, 71, 71);
+        border-top: 0.7px solid rgb(71, 71, 71);
     }
 
     .product{
+        box-shadow: 1px 1px 10px rgb(226, 226, 226);
         transition: 0.2s;
     }
 }
 
 @media screen and (min-width:992px){
     .product:hover{
+        box-shadow: 1px 1px 10px rgb(141, 141, 141);
         @include animacion-productos(scale(1.05));
     }
 }

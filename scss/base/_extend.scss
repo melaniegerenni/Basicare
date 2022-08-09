@@ -1,6 +1,10 @@
 //usado en los botones de _index y de _contacto
 
 %botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
     border-radius: 15px;
     background-color: $color-primario;
     border: none;
