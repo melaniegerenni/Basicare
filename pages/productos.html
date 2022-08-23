@@ -31,184 +31,114 @@
 </head>
 <body>
     <!-- Bootstrap: navbar -->
-    <nav class="navbar navbar-expand-md bg-light shadow sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand p-2 logoBasic" href="../index.html"><img src="../img/logo-basicare.png" alt="" width="60%"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-1 mb-md-0">
-              <li class="nav-item">
-                <a class="text-uppercase nav-link text-center" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="text-uppercase nav-link text-center" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="text-uppercase nav-link text-center active" aria-current="page" href="productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="text-uppercase nav-link text-center" href="marcas.html">Marcas</a>
-              </li>
-              <li class="nav-item">
-                <a class="text-uppercase nav-link text-center" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-md bg-light shadow sticky-top">
+            <div class="container-fluid">
+            <a class="navbar-brand p-2 logoBasic" href="../index.html"><img src="../img/logo-basicare.png" alt="logo Basicare" width="60%"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-1 mb-md-0">
+                <li class="nav-item">
+                    <a class="text-uppercase nav-link text-center" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-uppercase nav-link text-center" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-uppercase nav-link text-center active" aria-current="page" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-uppercase nav-link text-center" href="marcas.html">Marcas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-uppercase nav-link text-center" href="contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>    
 
-    <main class="mainProductos p-3">
+    <main class="mainProductos">
         <h1 class="text-center mt-3 animate__animated animate__fadeInDown">Productos</h1>
-        <div class="container-fluid" id="pinzas">
-            <div class="row pt-5 mb-5 justify-content-center">
-                <h2 class="h2Pinzas pt-5 animate__animated animate__fadeInDown text-center col-10">Pinzas de depilar</h2>
+        <div class="categoria" id="pinzas">
+            <div class="h2pinzas">
+                <h2 class="animate__animated animate__fadeInDown">Pinzas de depilar</h2>
             </div>
-            <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 animate__animated animate__fadeIn">
-                <div class="col p-2">
-                    <img src="../img/1003.jpg" alt="pinza 1003" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1014.jpg" alt="pinza 1014" class="product rounded-4 w-100">
-                </div>   
-                <div class="col p-2">
-                    <img src="../img/1181.jpg" alt="pinza 1181" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1211.jpg" alt="pinza 1211" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1576.jpg" alt="pinza 1576" class="product rounded-4 w-100">
-                </div>  
-                <div class="col p-2">
-                    <img src="../img/1622.jpg" alt="pinza 1622" class="product rounded-4 w-100">
-                </div>    
+            <div class="categoriaImg animate__animated animate__fadeIn">
+                <img src="../img/1003.jpg" alt="pinza 1003">
+                <img src="../img/1014.jpg" alt="pinza 1014">
+                <img src="../img/1181.jpg" alt="pinza 1181">
+                <img src="../img/1211.jpg" alt="pinza 1211">
+                <img src="../img/1576.jpg" alt="pinza 1576">
+                <img src="../img/1622.jpg" alt="pinza 1622">
             </div>
         </div>
-        <div class="container-fluid" id="alicates">
-            <div class="row pt-5 mb-5 justify-content-center">
-                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-11 border-top">Alicates</h2>
+        <div class="categoria" id="alicates">
+            <div class="categoriaH2">
+                <h2 class="animate__animated animate__fadeInDown">Alicates</h2>
             </div>
-            <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 animate__animated animate__fadeIn">
-                <div class="col p-2">
-                    <img src="../img/1026.jpg" alt="alicate 1026" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1027.jpg" alt="alicate 1027" class="product rounded-4 w-100">
-                </div>    
-                <div class="col p-2">
-                    <img src="../img/1028.jpg" alt="alicate 1028" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1017.jpg" alt="kit 1017" class="product rounded-4 w-100">
-                </div>    
-                <div class="col p-2">
-                    <img src="../img/1641.jpg" alt="alicate 1641" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1813.jpg" alt="kit 1813" class="product rounded-4 w-100">
-                </div>   
+            <div class="categoriaImg  animate__animated animate__fadeIn">
+                <img src="../img/1026.jpg" alt="alicate 1026">
+                <img src="../img/1027.jpg" alt="alicate 1027">
+                <img src="../img/1028.jpg" alt="alicate 1028">
+                <img src="../img/1017.jpg" alt="kit 1017">
+                <img src="../img/1641.jpg" alt="alicate 1641">
+                <img src="../img/1813.jpg" alt="alicate 1813">
             </div>
         </div>
-        <div class="container-fluid" id="tijeras">
-            <div class="row pt-5 mb-5 justify-content-center">
-                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-11 border-top">Tijeras</h2>
+        <div class="categoria" id="tijeras">
+            <div class="categoriaH2">
+                <h2 class="animate__animated animate__fadeInDown">Tijeras</h2>
             </div>
-            <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 animate__animated animate__fadeIn">
-                <div class="col p-2">
-                    <img src="../img/1015.jpg" alt="tijera 1015" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1016.jpg" alt="tijera 1016" class="product rounded-4 w-100">
-                </div>    
-                <div class="col p-2">
-                    <img src="../img/1018.jpg" alt="tijera 1018" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1020.jpg" alt="tijera 1020" class="product rounded-4 w-100">
-                </div>  
-                <div class="col p-2">
-                    <img src="../img/1024.jpg" alt="tijera 1024" class="product rounded-4 w-100">
-                </div>      
-                <div class="col p-2">
-                    <img src="../img/1025.jpg" alt="tijera 1025" class="product rounded-4 w-100">
-                </div>    
+            <div class="categoriaImg  animate__animated animate__fadeIn">
+                <img src="../img/1015.jpg" alt="tijera 1015">
+                <img src="../img/1016.jpg" alt="tijera 1016">
+                <img src="../img/1018.jpg" alt="tijera 1018">
+                <img src="../img/1020.jpg" alt="tijera 1020">
+                <img src="../img/1024.jpg" alt="tijera 1024">
+                <img src="../img/1025.jpg" alt="tijera 1025">
             </div>
         </div>
-        <div class="container-fluid" id="arqueadores">
-            <div class="row pt-5 mb-5 justify-content-center">
-                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-11 border-top">Arqueadores de pestañas</h2>
+        <div class="categoria" id="arqueadores">
+            <div class="categoriaH2">
+                <h2 class="animate__animated animate__fadeInDown">Arqueadores de pestañas</h2>
             </div>
-            <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 animate__animated animate__fadeIn">
-                <div class="col p-2">
-                    <img src="../img/1031.jpg" alt="arqueador 1031" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1032.jpg" alt="arqueador 1032" class="product rounded-4 w-100">
-                </div>    
-                <div class="col p-2">
-                    <img src="../img/1121.jpg" alt="arqueador 1121" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1279.jpg" alt="arqueador 1279" class="product rounded-4 w-100">
-                </div> 
-                <div class="col p-2">
-                    <img src="../img/5005.jpg" alt="arqueador 5005" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/7112.jpg" alt="arqueador 7112" class="product rounded-4 w-100">
-                </div>   
+            <div class="categoriaImg  animate__animated animate__fadeIn">
+                <img src="../img/1031.jpg" alt="esponja 1031">
+                <img src="../img/1032.jpg" alt="esponja 1032">
+                <img src="../img/1121.jpg" alt="esponja 1121">
+                <img src="../img/1279.jpg" alt="esponja 1279">
+                <img src="../img/5005.jpg" alt="esponja 5005">
+                <img src="../img/7112.jpg" alt="esponja 7112">
             </div>
         </div>
-        <div class="container-fluid" id="brochas">
-            <div class="row pt-5 mb-5 justify-content-center">
-                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-11 border-top">Brochas faciales</h2>
+        <div class="categoria" id="brochas">
+            <div class="categoriaH2">
+                <h2 class="animate__animated animate__fadeInDown">Brochas faciales</h2>
             </div>
-            <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 animate__animated animate__fadeIn">
-                <div class="col p-2">
-                    <img src="../img/1058.jpg" alt="brocha 1058" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1059.jpg" alt="brocha 1059" class="product rounded-4 w-100">
-                </div>    
-                <div class="col p-2">
-                    <img src="../img/1060.jpg" alt="brocha 1060" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1068.jpg" alt="brocha 1068" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/1129.jpg" alt="brocha 1129" class="product rounded-4 w-100">
-                </div>  
-                <div class="col p-2">
-                    <img src="../img/1962.jpg" alt="brocha 1962" class="product rounded-4 w-100">
-                </div>  
+            <div class="categoriaImg  animate__animated animate__fadeIn">
+                <img src="../img/1058.jpg" alt="esponja 1058">
+                <img src="../img/1059.jpg" alt="esponja 1059">
+                <img src="../img/1060.jpg" alt="esponja 1060">
+                <img src="../img/1068.jpg" alt="esponja 1068">
+                <img src="../img/1129.jpg" alt="esponja 1129">
+                <img src="../img/1962.jpg" alt="esponja 1962">
             </div>
         </div>
-        <div class="container-fluid" id="cepillos">
-            <div class="row pt-5 mb-5 justify-content-center">
-                <h2 class="pt-5 animate__animated animate__fadeInDown text-center col-11 border-top">Cepillos</h2>
+        <div class="categoria" id="cepillos">
+            <div class="categoriaH2">
+                <h2 class="animate__animated animate__fadeInDown">Cepillos</h2>
             </div>
-            <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 animate__animated animate__fadeIn">
-                <div class="col p-2">
-                    <img src="../img/3224.jpg" alt="cepillo 3224" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/3225.jpg" alt="cepillo 3225" class="product rounded-4 w-100">
-                </div>    
-                <div class="col p-2">
-                    <img src="../img/3433.jpg" alt="cepillo 3433" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/3434.jpg" alt="cepillo 3434" class="product rounded-4 w-100">
-                </div>
-                <div class="col p-2">
-                    <img src="../img/3620.jpg" alt="cepillo 3620" class="product rounded-4 w-100">
-                </div>  
-                <div class="col p-2">
-                    <img src="../img/3621.jpg" alt="cepillo 3621" class="product rounded-4 w-100">
-                </div>  
+            <div class="categoriaImg  animate__animated animate__fadeIn">
+                <img src="../img/3224.jpg" alt="esponja 3224">
+                <img src="../img/3225.jpg" alt="esponja 3225">
+                <img src="../img/3433.jpg" alt="esponja 3433">
+                <img src="../img/3434.jpg" alt="esponja 3434">
+                <img src="../img/3620.jpg" alt="esponja 3620">
+                <img src="../img/3621.jpg" alt="esponja 3621">
             </div>
         </div>
     </main>
@@ -231,7 +161,5 @@
 
     <!-- JavaScript Bundle with Popper (Bootstrap) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
-</html>
 </body>
 </html>
